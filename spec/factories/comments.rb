@@ -5,4 +5,4 @@ FactoryBot.define do
     content { 'This is comment message' }
   end
 end
-  
+ 
