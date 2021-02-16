@@ -15,5 +15,4 @@ class User < ApplicationRecord
 
   has_many :passive_friendships, class_name: 'Friendship', foreign_key: :receiver_id, dependent: :destroy
   has_many :receivers, through: :passive_friendships, source: :requester
-
 end
