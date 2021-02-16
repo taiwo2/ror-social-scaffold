@@ -1,11 +1,13 @@
 AllCops:
   Exclude:
     - "db/**/*"
-    - "bin/*"
+    - "bin/*" 
     - "config/**/*"
     - "Guardfile"
+    - "Gemfile"
     - "Rakefile"
     - "node_modules/**/*"
+    - "vendor/bundle/**/*"
 
   DisplayCopNames: true
 
@@ -24,7 +26,7 @@ Metrics/AbcSize:
 Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
-  ExcludedMethods: ["describe"]
+  ExcludedMethods: ['describe']
   Max: 30
 
 Style/Documentation:
