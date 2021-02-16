@@ -4,4 +4,4 @@ FactoryBot.define do
     content { 'This is post message' }
   end
 end
-    
+  
