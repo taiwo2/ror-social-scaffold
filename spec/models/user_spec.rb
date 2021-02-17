@@ -109,7 +109,6 @@ RSpec.describe User, type: :model do
     end
   end
 
-
   describe 'mutual friends' do
     it 'should list all mutual friends' do
       user = create(:user)
