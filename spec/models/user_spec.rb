@@ -77,6 +77,16 @@ RSpec.describe User, type: :model do
       expect(user.friends.map(&:id)).to match_array([another_user.id])
       expect(another_user.friends.map(&:id)).to match_array([user.id])
     end
+
+    it 'does not list friends that have pending status' do
+      user = create(:user)
+      another_user = create(:user)
+
+      user.send_friend_request_to(another_user)
+
+
+      expect(user.friends.count).to be_zero
+    end
   end
 
   describe 'friend?' do
@@ -88,6 +98,15 @@ RSpec.describe User, type: :model do
       another_user.accept_friend_request(user)
 
       expect(user.friend?(another_user)).to be_truthy
+    end
+
+    it 'returns false if the user is not friend of another user' do
+      user = create(:user)
+      another_user = create(:user)
+
+      user.send_friend_request_to(another_user)
+
+      expect(user.friend?(another_user)).to be_falsy
     end
   end
 end
