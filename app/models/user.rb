@@ -17,13 +17,13 @@ class User < ApplicationRecord
   has_many :receivers, through: :passive_friendships, source: :requester
 
   def friends
-    friends_arr = active_friendships.map { |friendship| friendship.receiver if friendship.accepted! }
-    friends_arr += passive_friendships.map { |friendship| friendship.requester if friendship.accepted! }
+    friends_arr = active_friendships.map { |friendship| friendship.receiver if friendship.accepted? }
+    friends_arr += passive_friendships.map { |friendship| friendship.requester if friendship.accepted? }
     friends_arr.compact
   end
 
   def pending_friends
-    friends = passive_friendships.map { |friendship| friendship.requester if friendship.pending! }
+    friends = passive_friendships.map { |friendship| friendship.requester if friendship.pending? }
     friends.compact
   end
 
