@@ -129,7 +129,7 @@ RSpec.describe User, type: :model do
 
       create(:friendship, requester: user, receiver: another_user)
       create(:friendship, requester: other_user, receiver: user)
-      
+
       expect(other_user.mutual_friends(user).map(&:id)).to match_array([])
     end
   end
