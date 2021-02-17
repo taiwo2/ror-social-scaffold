@@ -42,7 +42,27 @@ class User < ApplicationRecord
     friendship.destroy
   end
 
+  def mutual_friends(user)
+    mutual_friends = friends + user.friends
+
+    mutual_friends.reject do |friend|
+      friend.id == user.id || !friend?(friend) || !user.friend?(friend)
+    end
+  end
+
   def friend?(user)
     friends.include?(user)
+  end
+
+  def friend_request_pending_from?(user)
+    Friendship.where(requester: user, receiver: self, status: 'pending').exists?
+  end
+
+  def friend_request_pending_to?(user)
+    Friendship.where(requester: self, receiver: user, status: 'pending').exists?
+  end
+
+  def no_relation?(user)
+    !friend?(user) && !friend_request_pending_from?(user) && !friend_request_pending_to?(user)
   end
 end
