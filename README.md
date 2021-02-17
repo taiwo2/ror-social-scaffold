@@ -85,7 +85,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-TBA
+- Official [Rails guides](https://guides.rubyonrails.org/index.html). 
+- The [Odin Project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/associations).
+- [Microverse](https://www.microverse.org/).
 
 ## 📝 License
 
