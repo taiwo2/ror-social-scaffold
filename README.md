@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 # Scaffold for social media app with Ruby on Rails
 
 > This repository  includes initial code for social media app with basic styling. Its purpose is to be a starting point for Microverse students.
