@@ -97,5 +97,5 @@ TBA
 
 ## 📝 License
 
-TBA
+[MIT](https://github.com/IjayAbby/ror-social-scaffold/blob/development/LICENSE) 
 
