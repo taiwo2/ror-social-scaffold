@@ -18,7 +18,7 @@ class User < ApplicationRecord
 
   def friends
     friends_arr = active_friendships.map { |friendship| friendship.receiver if friendship.accepted! }
-    friends_arr += passive_friendships.map {|friendship| friendship.requester  if friendship.accepted!}
+    friends_arr += passive_friendships.map { |friendship| friendship.requester if friendship.accepted! }
     friends_arr.compact
   end
 
