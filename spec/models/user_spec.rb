@@ -84,7 +84,6 @@ RSpec.describe User, type: :model do
 
       user.send_friend_request_to(another_user)
 
-
       expect(user.friends.count).to be_zero
     end
   end
