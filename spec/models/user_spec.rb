@@ -108,4 +108,25 @@ RSpec.describe User, type: :model do
       expect(user.friend?(another_user)).to be_falsy
     end
   end
+
+
+  describe 'mutual friends' do
+    it 'should list all mutual friends' do
+      user = create(:user)
+      another_user = create(:user)
+      other_user = create(:user)
+      create(:friendship, requester: user, receiver: another_user)
+      create(:friendship, requester: other_user, receiver: user)
+      create(:friendship, requester: other_user, receiver: another_user)
+      expect(other_user.mutual_friends(user).map(&:id)).to match_array([another_user.id])
+    end
+    it 'should list all mutual friends' do
+      user = create(:user)
+      another_user = create(:user)
+      other_user = create(:user)
+      create(:friendship, requester: user, receiver: another_user)
+      create(:friendship, requester: other_user, receiver: user)
+      expect(other_user.mutual_friends(user).map(&:id)).to match_array([])
+    end
+  end
 end
