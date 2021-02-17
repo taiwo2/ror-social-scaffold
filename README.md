@@ -74,7 +74,16 @@ TBA
 
 ## Authors
 
-TBA
+👤 **Abigael Nyangasi**
+- Github: [@IjayAbby](https://github.com/IjayAbby)
+- Twitter: [@Ijay_js](https://twitter.com/Ijay_js)
+- Linkedin: [Abigael Nyangasi](https://www.linkedin.com/in/ijayabby4/)
+
+👤 **Murodjon Tursunpulatov**
+
+- Github: [@murodjon000](https://github.com/murodjon000)
+- Twitter: [@MurodjonTursun5](https://twitter.com/MurodjonTursun5)
+- Linkedin: [@Murodjon Tursunpulatov](https://www.linkedin.com/in/murodjon-tursunpulatov-5189481b3/)
 
 ## 🤝 Contributing
 
