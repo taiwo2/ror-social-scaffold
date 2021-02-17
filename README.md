@@ -6,6 +6,7 @@
 
 - Ruby v2.7.0
 - Ruby on Rails v5.2.4
+- VSCode - code editor
 
 ## Live Demo
 
@@ -22,7 +23,6 @@ To get a local copy up and running follow these simple example steps.
 - Bootstrap - version 5.0
 - Ruby - version 2.7.0
 - PostgreSQL  - version 20.04
-- VSCode - code editor
 
 ### Setup
 
