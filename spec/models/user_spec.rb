@@ -26,8 +26,8 @@ RSpec.describe User, type: :model do
         user.send_friend_request_to(another_user)
 
         expect(user.requesters.map(&:id)).to match_array([another_user.id])
-        expect(user.active_friendships.first.status).to eq('pending') 
-      end 
+        expect(user.active_friendships.first.status).to eq('pending')
+      end
     end
 
     it 'raise error if user send multiple requests' do
@@ -52,7 +52,6 @@ RSpec.describe User, type: :model do
       expect(user.active_friendships.first.status).to eq('accepted')
     end
   end
-
 
   describe 'delete_friend_request' do
     it 'delete other users friend requests' do
