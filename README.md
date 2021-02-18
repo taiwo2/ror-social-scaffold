@@ -1,10 +1,21 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Scaffold for social media website with Ruby on Rails
+# Social media app
 
-> This repository  includes initial code for social media app with basic styling. Its purpose is to be a starting point for Microverse students.
->  The project works similar like any social media website where a user can accept or decline a friend request and they can also send   or receive a friend request.
+> In this project, users can sign up and create posts. Moreover it inherits the core functionality of social media sites such as facebook.com. Users can send request to one another and view the posts written by the user or from the user's friend list.
 
+## Features
+
+- Allow users to send a friend request to other users
+- Multiple request states
+- Show posts written by the user and by the user's friends
+- List all mutual friends of a user
+- Followed TDD
+
+## Concept of mutual friendship
+
+> A mutual friend is an individual who has established a friendship with two people. When those two people meet, they learn that they share the same friend; that friend they have in common is their mutual friend. If the two people become friends, a circle of friendship develops between the mutual friend and the other individuals. Mutual friendships are commonplace in schools, where kids are introduced to each other by a mutual friend. Adults often meet other people in the workplace, bars, restaurants and other social settings due to a mutual friend introducing them. From [our](https://oureverydaylife.com/mutual-friend-mean-10031289.html#:~:text=A%20mutual%20friend%20is%20an,common%20is%20their%20mutual%20friend.)
+  
 ## Built With
 
 - Ruby v2.7.0
@@ -15,10 +26,15 @@
 
 TBA
 
-
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+- Clone the repo `git@github.com:IjayAbby/ror-social-scaffold.git`
+- cd `into` the project
+- Run `git pull origin friendship-2`
+- Run `bundle install`
+- Setup your `db` in the `database.yml` and run `rails db:setup`
+- Run `rails s` and visit `localhost:3000`
+
 
 ### Prerequisites
 
@@ -27,20 +43,6 @@ To get a local copy up and running follow these simple example steps.
 - Ruby - version 2.7.0
 - PostgreSQL  - version 20.04
 
-### Setup
-
-Install gems with:
-
-```
-bundle install
-```
-
-Setup database with:
-
-```
-   rails db:create
-   rails db:migrate
-```
 
 ### Github Actions
 
@@ -52,23 +54,10 @@ To make sure the linters' checks using Github Actions work properly, you should 
 4. Open a PR from the `feature/branch` when your work is done.
 
 
-### Usage
-
-Start server with:
-
-```
-    rails server
-```
-
-Open `http://localhost:3000/` in your browser.
-
 ### Run tests
 
-```
-    rpsec --format documentation
-```
+- Run `bundle exec rspec` to run all the tests, or
 
-> Tests will be added by Microverse students. There are no tests for initial features in order to make sure that students write all tests from scratch.
 
 ### Deployment
 
