@@ -1,11 +1,15 @@
-# Scaffold for social media app with Ruby on Rails
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-> This repo includes intial code for social media app with basic styling. Its purpose is to be a starting point for Microverse students.
+# Scaffold for social media website with Ruby on Rails
+
+> This repository  includes initial code for social media app with basic styling. Its purpose is to be a starting point for Microverse students.
+>  The project works similar like any social media website where a user can accept or decline a friend request and they can also send   or receive a friend request.
 
 ## Built With
 
 - Ruby v2.7.0
 - Ruby on Rails v5.2.4
+- VSCode - code editor
 
 ## Live Demo
 
@@ -18,13 +22,14 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-Ruby: 2.6.3
-Rails: 5.2.3
-Postgres: >=9.5
+- Rails - version  5.2.4
+- Bootstrap - version 5.0
+- Ruby - version 2.7.0
+- PostgreSQL  - version 20.04
 
 ### Setup
 
-Instal gems with:
+Install gems with:
 
 ```
 bundle install
@@ -71,7 +76,16 @@ TBA
 
 ## Authors
 
-TBA
+👤 **Abigael Nyangasi**
+- Github: [@IjayAbby](https://github.com/IjayAbby)
+- Twitter: [@Ijay_js](https://twitter.com/Ijay_js)
+- Linkedin: [Abigael Nyangasi](https://www.linkedin.com/in/ijayabby4/)
+
+👤 **Murodjon Tursunpulatov**
+
+- Github: [@murodjon000](https://github.com/murodjon000)
+- Twitter: [@MurodjonTursun5](https://twitter.com/MurodjonTursun5)
+- Linkedin: [@Murodjon Tursunpulatov](https://www.linkedin.com/in/murodjon-tursunpulatov-5189481b3/)
 
 ## 🤝 Contributing
 
@@ -85,9 +99,11 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-TBA
+- Official [Rails guides](https://guides.rubyonrails.org/index.html). 
+- The [Odin Project](https://www.theodinproject.com/courses/ruby-on-rails/lessons).
+- [Microverse](https://www.microverse.org/).
 
 ## 📝 License
 
-TBA
+[MIT](https://github.com/IjayAbby/ror-social-scaffold/blob/development/LICENSE) 
 
