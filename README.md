@@ -4,6 +4,8 @@
 
 > In this project, users can sign up and create posts. Moreover it inherits the core functionality of social media sites such as facebook.com. Users can send request to one another and view the posts written by the user or from the user's friend list.
 
+- [live-version🚀](https://friend-app-ror.herokuapp.com/)
+
 ## Features
 
 - Allow users to send a friend request to other users
