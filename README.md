@@ -4,7 +4,7 @@
 
 > In this project, users can sign up and create posts. Moreover it inherits the core functionality of social media sites such as facebook.com. Users can send request to one another and view the posts written by the user or from the user's friend list.
 
-- [live-version🚀](https://friend-app-ror.herokuapp.com/)
+
 
 ## Features
 
@@ -17,7 +17,11 @@
 ## Concept of mutual friendship
 
 > A mutual friend is an individual who has established a friendship with two people. When those two people meet, they learn that they share the same friend; that friend they have in common is their mutual friend. If the two people become friends, a circle of friendship develops between the mutual friend and the other individuals. Mutual friendships are commonplace in schools, where kids are introduced to each other by a mutual friend. Adults often meet other people in the workplace, bars, restaurants and other social settings due to a mutual friend introducing them. From [our](https://oureverydaylife.com/mutual-friend-mean-10031289.html#:~:text=A%20mutual%20friend%20is%20an,common%20is%20their%20mutual%20friend.)
-  
+
+## Live Demo
+
+- [click-here](https://friend-app-ror.herokuapp.com/)
+
 ## Built With
 
 - Ruby v2.7.0
