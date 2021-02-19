@@ -30,10 +30,6 @@
 - Ruby on Rails v5.2.4
 - VSCode - code editor
 
-## Live Demo
-
-TBA
-
 ## Getting Started
 
 - Clone the repo `git@github.com:IjayAbby/ror-social-scaffold.git`
