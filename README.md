@@ -1,10 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Social media app
+# Social media website
 
 > In this project, users can sign up and create posts. Moreover it inherits the core functionality of social media sites such as facebook.com. Users can send request to one another and view the posts written by the user or from the user's friend list.
 
+# Project screenshot
 
+![Screenshot from 2021-02-18 17-30-56](https://user-images.githubusercontent.com/43843720/108414220-06f19800-723d-11eb-9178-fe4a9df30ffe.png)
 
 ## Features
 
