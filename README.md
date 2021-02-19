@@ -63,10 +63,6 @@ To make sure the linters' checks using Github Actions work properly, you should 
 - Run `bundle exec rspec` to run all the tests, or
 
 
-### Deployment
-
-TBA
-
 ## Authors
 
 👤 **Abigael Nyangasi**
