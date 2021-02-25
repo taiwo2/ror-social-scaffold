@@ -18,4 +18,3 @@ class FriendshipsController < ApplicationController
     redirect_to root_path, notice: 'Rejected  friend request'
   end
 end
-
