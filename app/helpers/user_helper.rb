@@ -1,5 +1,4 @@
 module UserHelper
-
   def like_btn(user)
     if current_user == user
       render @pending_friends
@@ -7,5 +6,4 @@ module UserHelper
       render @mutual_friends
     end
   end
-
 end
