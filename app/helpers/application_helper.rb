@@ -15,4 +15,20 @@ module ApplicationHelper
       link_to('Like!', post_likes_path(post_id: post.id), method: :post)
     end
   end
+
+  def accept_button(user)
+    if current_user.friend_request_pending_from?(@user)
+    return link_to('Accept request',  user_friendships_path(user, user_id: user.id, requester_id: current_user.id), method: :put)
+    nil
+
+    end
+  end
+
+  def ignore_button(user)
+    if current_user.friend_request_pending_from?(@user)
+    return link_to('Decline',  user_friendships_path(user, user_id: user.id, requester_id: current_user.id), method: :delete, class: 'frnd-btn')
+
+    nil
+    end
+end
 end
