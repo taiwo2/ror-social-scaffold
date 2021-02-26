@@ -17,14 +17,15 @@ module ApplicationHelper
   end
 
   def accept_button(user)
-    
-    return link_to('Accept request', user_friendships_path(user, user_id: user.id, requester_id: current_user.id), method: :put) if current_user.friend_request_pending_from?(@user)
+    return link_to('Accept request', user_friendships_path(user, user_id: user.id, requester_id: current_user.id), method: :put) 
+      if current_user.friend_request_pending_from?(@user)
     
     nil
   end
 
   def ignore_button(user)
-    return link_to('Decline', user_friendships_path(user, user_id: user.id, requester_id: current_user.id), method: :delete) if current_user.friend_request_pending_from?(@user)
+    return link_to('Decline', user_friendships_path(user, user_id: user.id, requester_id: current_user.id), method: :delete)
+     if current_user.friend_request_pending_from?(@user)
   
     nil
   end
