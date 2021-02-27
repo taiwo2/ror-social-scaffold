@@ -14,7 +14,7 @@ module UserHelper
 
   def cancle(user)
     return link_to('cancle', user_friendships_path(user), method: :delete) if current_user.friend_request_pending_to?(user)
-    
+    nil
   end
 
   def inivite(user)
