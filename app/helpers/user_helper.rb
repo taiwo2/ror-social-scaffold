@@ -8,12 +8,12 @@ module UserHelper
   end
 
   def accept(user)
-      current_user.no_relation?(user) && current_user != user
+    current_user.no_relation?(user) && current_user != user
      
   end
 
   def cancle(user)
-    if current_user.friend_request_pending_to?(user)
+    unless current_user.friend_request_pending_to?(user)
       link_to('cancle', user_friendships_path(user), method: :delete)
     end
   end
