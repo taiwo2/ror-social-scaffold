@@ -9,7 +9,6 @@ module UserHelper
 
   def accept(user)
     current_user.no_relation?(user) && current_user != user
-     
   end
 
   def cancle(user)
