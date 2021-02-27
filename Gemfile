@@ -17,6 +17,7 @@ gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 gem 'next_rails'
 gem 'rails', '~> 6.0'
 
+
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'capybara', '~> 3.34'
