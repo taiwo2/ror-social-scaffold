@@ -23,6 +23,8 @@ group :development, :test do
   gem 'shoulda-matchers', '~> 4.4', '>= 4.4.1'
 end
 
+ 
+ gem 'rails_12factor', group: :production
 group :development do
   gem 'better_errors', '~> 2.8', '>= 2.8.3'
   gem 'binding_of_caller', '~> 1.0'
