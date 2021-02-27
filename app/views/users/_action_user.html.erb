@@ -1,12 +1,21 @@
 
-  <%= form_with url: user_friendships_path(user), method: :put do |f| %>
-  <%= accept_button(@user) %>
-    <%= f.submit 'Accept request', class: 'frnd-btn' %>
-  
-  <%end%>
+  <%= form_with url: user_friendships_path(user), method: :patch do |f| %>
+    <%= inivite(@user)%>
+
+    <%= f.submit 'Accept request' %>
+  <% end %>
   <%= form_with url: user_friendships_path(user), method: :delete do |f| %>
-    <%= ignore_button(@user) %>
-    <%= f.submit 'Decline',class: 'ignore-btn' %>
-  <%end%>
+      <%= inivite(@user)%>
+
+    <%= f.submit 'Decline' %>
+  <% end %>
+
+
+  <%= form_with url: user_friendships_path(user) do |f| %>
+    <%= accept(@user) %>
+
+    <%= f.submit 'Invite' %>
+  <% end %>
+
 
 
