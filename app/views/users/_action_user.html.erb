@@ -1,26 +1,21 @@
-<% if current_user.friend_request_pending_from?(user) %>
+
   <%= form_with url: user_friendships_path(user), method: :patch do |f| %>
+    <%= inivite(@user)%>
+
     <%= f.submit 'Accept request' %>
   <% end %>
   <%= form_with url: user_friendships_path(user), method: :delete do |f| %>
+      <%= inivite(@user)%>
+
     <%= f.submit 'Decline' %>
   <% end %>
-<% end %>
 
-<% if current_user.friend_request_pending_to?(user) %>
-  <%= form_with url: user_friendships_path(user), method: :delete do |f| %>
-    <%= f.submit 'Cancel request' %>
-  <% end %>
-<% end %>
 
-<% if current_user.no_relation?(user) && current_user != user %>
   <%= form_with url: user_friendships_path(user) do |f| %>
+    <%= accept(@user) %>
+
     <%= f.submit 'Invite' %>
   <% end %>
-<% end %>
 
-<% if current_user.friend?(user) %>
-  <%= form_with url: user_friendships_path(user), method: :delete do |f| %>
-    <%= f.submit 'Remove' %>
-  <% end %>
-<% end %>
+
+
