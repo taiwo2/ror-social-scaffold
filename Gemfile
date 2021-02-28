@@ -14,7 +14,6 @@ gem 'sass-rails', '~> 5.0'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
-gem 'next_rails'
 gem 'rails', '~> 6.0'
 
 
@@ -27,7 +26,7 @@ group :development, :test do
 end
 
  
- gem 'rails_12factor', group: :production
+ 
 group :development do
   gem 'better_errors', '~> 2.8', '>= 2.8.3'
   gem 'binding_of_caller', '~> 1.0'
